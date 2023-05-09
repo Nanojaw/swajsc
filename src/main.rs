@@ -29,5 +29,5 @@ fn main() {
         Err(error) => panic!("Module is invalid! Error: {}", error.message()),
     };
 
-    codegen::generate_js(ast);
+    println!("{}", codegen::generate_js(ast));
 }

@@ -43,6 +43,7 @@ struct Elem {
 
 struct Data {
     init: Vec<u8>,
+    mode: DataMode,
 }
 
 struct Import {
@@ -103,7 +104,7 @@ enum ElemMode {
 
 enum DataMode {
     Passive,
-    Active(Mem, Expr),
+    Active(Mem, Expf),
 }
 
 enum ValType {
